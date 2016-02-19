@@ -1,0 +1,84 @@
+//GENERAL SETTINGS
+
+* {
+  box-sizing: border-box;
+}
+
+.clear{
+  clear:both;
+}
+
+@import '_reset';
+
+html{
+  background-color: #e1e2e7;
+}
+
+.mainWidth{
+  max-width: 1200px;
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+//HEADER SECTION
+
+.topMenu {
+  padding-bottom: 2%;
+  text-align: center;
+  font-family: "latohairline", sans-serif;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  border: 1px solid black;
+
+  p {
+    float: left;
+    font-size: 160%;
+    padding-top: 4%;
+    width: 20%;
+
+  }
+  ul {
+    float: right;
+    text-align: right;
+    padding-top: 5%;
+    padding-left: 2%;
+    width:70%;
+
+    li {
+      display: inline-block;
+      padding-left: 3%;
+      font-size: 70%;
+    }
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      padding-top: 5%;
+      font-size: 1em;
+      font-family: "latoregular", sans-serif;
+      color: grey;
+    }
+  }
+}
+
+.searchField{
+  display: inline-block;
+  border: 2px solid #32508a;
+  background-color: #f4f2f4;
+    input {
+      border: none;
+      background-color: #f4f2f4;
+      padding-bottom: 5px;
+      font-size: 16px;
+      }
+    button{
+      border: none;
+      background-color: #f4f2f4;
+    }
+    img{
+      width: 32px;
+      height: 32px;
+    }
+}
+
