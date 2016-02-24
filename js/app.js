@@ -1,13 +1,24 @@
 /**
  * Created by Agata on 19.02.2016.
  */
-$(document).ready(function() {
+$(document).ready(function () {
 
 
-// -------- // HAMBURGER MENU // -------- //
+    $('.notUnderline').click(function () {
+        if ($('.active').length) {
+            $('.active').not($(this)).removeClass('active').addClass('notUnderline');
+        }
+        $(this).addClass('active');
+    });
+
+
+    $('.notUnderline, .clickHamburger').click(function () {
+        $('#changingContent').html($(this).html());
+    });
+
 
     function setMenu() {
-        if ($(window).width() < 915) {
+        if ($(window).width() < 996) {
             $('.hamburger').hide();
             $('.menuBtn').show();
         } else {
@@ -23,13 +34,11 @@ $(document).ready(function() {
         });
     }
 
-
     setMenu();
 
     $(window).on('resize', function () {
         setMenu();
     });
     setClick();
-
 
 });

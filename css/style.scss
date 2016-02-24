@@ -22,13 +22,11 @@ html {
   width: 80%;
   margin: 0 auto;
   position: relative;
-  border: 1px solid green;
 }
 
 //HEADER SECTION
 
 .topMenu {
-  //padding-bottom: 1.2%;
   font-family: $font;
   width: 100%;
   background-color: #ffffff;
@@ -36,8 +34,6 @@ html {
   display: inline-block;
   text-align: inherit;
   ul {
-    //padding-top: 2.3%;
-    //padding-bottom: 2%;
     width: 100%;
     float: left;
     display: table;
@@ -59,6 +55,7 @@ html {
       font-size: 10px;
       font-family: $font;
       color: grey;
+      padding-bottom: 6px;
     }
   }
 }
@@ -94,6 +91,60 @@ html {
   }
 }
 
+.notUnderline {
+  border-bottom: none;
+}
+
+.active {
+  border-bottom: 3px solid #32508a;
+}
+
+//HAMBURGER MENU
+
+.notVisible {
+  display: none;
+}
+
+.menuBtn {
+  span {
+    display: block;
+    width: 19px;
+    height: 5px;
+    margin: 4px 0;
+    background: #2c4e8e;
+
+  }
+}
+
+.mobileNav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  a {
+    font-family: "latohairline", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2c4e8e;
+  }
+}
+
+.mobileNav {
+  ul {
+    padding: 5px 0 0 5px;
+    width: 156px;
+  }
+  li {
+    background-color: white;
+    font-family: "latoregular", sans-serif;
+    font-weight: bold;
+    display: block;
+    padding: 15px;
+    border: 1px solid #2c4e8e;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
 //MAIN SECTION
 
 .mainArea {
@@ -110,14 +161,10 @@ html {
     margin-bottom: 20px;
     font-size: 25px;
   }
-  form {
-    //width: 180px;
-  }
 }
 
 .rightBlock {
   float: right;
-  border: 1px dotted blue;
   width: 79%;
 }
 

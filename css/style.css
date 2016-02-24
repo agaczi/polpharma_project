@@ -58,8 +58,7 @@ html {
   max-width: 1200px;
   width: 80%;
   margin: 0 auto;
-  position: relative;
-  border: 1px solid green; }
+  position: relative; }
 
 .topMenu {
   font-family: "latohairline", sans-serif;
@@ -87,7 +86,8 @@ html {
       padding-top: 5%;
       font-size: 10px;
       font-family: "latohairline", sans-serif;
-      color: grey; }
+      color: grey;
+      padding-bottom: 6px; }
 
 .float {
   float: right;
@@ -115,6 +115,45 @@ html {
     height: 20px;
     margin-top: 1px; }
 
+.notUnderline {
+  border-bottom: none; }
+
+.active {
+  border-bottom: 3px solid #32508a; }
+
+.notVisible {
+  display: none; }
+
+.menuBtn span {
+  display: block;
+  width: 19px;
+  height: 5px;
+  margin: 4px 0;
+  background: #2c4e8e; }
+
+.mobileNav {
+  position: fixed;
+  z-index: 100;
+  top: 0; }
+  .mobileNav a {
+    font-family: "latohairline", sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #2c4e8e; }
+
+.mobileNav ul {
+  padding: 5px 0 0 5px;
+  width: 156px; }
+.mobileNav li {
+  background-color: white;
+  font-family: "latoregular", sans-serif;
+  font-weight: bold;
+  display: block;
+  padding: 15px;
+  border: 1px solid #2c4e8e;
+  text-align: center;
+  font-size: 15px; }
+
 .mainArea {
   background-color: #e1e2e7;
   padding-top: 30px; }
@@ -130,7 +169,6 @@ html {
 
 .rightBlock {
   float: right;
-  border: 1px dotted blue;
   width: 79%; }
 
 .headerline {
