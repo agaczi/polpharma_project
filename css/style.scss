@@ -121,7 +121,7 @@ html {
   z-index: 100;
   top: 0;
   a {
-    font-family: "latohairline", sans-serif;
+    font-family: $font;
     text-transform: uppercase;
     text-decoration: none;
     color: #2c4e8e;
@@ -135,7 +135,7 @@ html {
   }
   li {
     background-color: white;
-    font-family: "latoregular", sans-serif;
+    font-family: $font;
     font-weight: bold;
     display: block;
     padding: 15px;
